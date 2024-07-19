@@ -5,7 +5,7 @@ import { WateringSchedule } from "../interfaces";
 import { Plant } from "../interfaces";
 
 import CalendarSquare from "./CalendarSquare";
-import PlantListPopover from "./PlantListPopover";
+import DailyPlantList from "./DailyPlantList";
 
 function Calendar() {
   const [loading, setLoading] = useState(true);
@@ -89,7 +89,7 @@ function Calendar() {
             ))}
           </div>
           <div className="card-body collapse" id="plantList">
-            <PlantListPopover plants={plantList} date={date} />
+            <DailyPlantList plants={plantList} date={date} />
           </div>
         </div>
       )}

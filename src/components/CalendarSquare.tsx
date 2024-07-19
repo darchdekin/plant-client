@@ -13,12 +13,12 @@ function CalendarSquare(props: Props) {
   return (
     <div className="">
       {props.day && (
-        <div className="card rounded-0">
-          <div className="card-header d-none d-sm-inline">
+        <div className="card rounded-0 border-start-0 border-end-0 border-bottom-0">
+          <div className="card-header d-none d-sm-inline border border-0">
             {props.day?.toString()}
           </div>
 
-          <div className="card-body  d-none d-sm-block">
+          <div className="card-body d-none d-sm-block d-lg-none d-xl-block">
             <div className="ratio  ratio-1x1">
               {props.plants && props.plants.length > 0 && (
                 <button
@@ -38,7 +38,7 @@ function CalendarSquare(props: Props) {
             </div>
           </div>
 
-          <div className="d-block d-sm-none d-flex ratio ratio-1x1">
+          <div className="d-block d-sm-none d-lg-block d-xl-none d-flex ratio ratio-1x1">
             {props.plants && props.plants.length > 0 && (
               <button
                 type="button"
